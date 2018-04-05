@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://130.111.126.71:8081/openhds/" />
+<title>Setup</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Setup</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>admin</td>
+	<td>user</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>test</td>
+	<td>pass</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>FWTFW2</td>
+	<td>fwId</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>MBI000023</td>
+	<td>locId</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>MBI00002300</td>
+	<td>sgId</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>MBI000023002</td>
+	<td>visitId</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>MBI000023001</td>
+	<td>ghId</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>MBI000023002</td>
+	<td>motherId</td>
+</tr>
+</tbody></table>
+</body>
+</html>
