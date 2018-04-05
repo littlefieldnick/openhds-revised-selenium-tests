@@ -38,19 +38,3 @@ VALUES ('PregObsTest', '0', '2018-04-04', NULL, NULL, NULL, NULL, '2018-12-12', 
 
 INSERT INTO `pregnancyoutcome` (`uuid`, `deleted`, `insertDate`, `voidDate`, `voidReason`, `status`, `statusMessage`, `childEverBorn`, `numberOfLiveBirths`, `outcomeDate`, `insertBy_uuid`, `voidBy_uuid`, `collectedBy_uuid`, `father_uuid`, `mother_uuid`, `visit_uuid`) 
 VALUES ('PregOutcomeTest', '0', '2018-04-04', NULL, NULL, NULL, NULL, '1', '1', '2018-03-13', 'User 2', 'User 2', 'Test Fieldworker', 'Test Indiv 1', 'Test Indiv 2', 'TestVisit2');
-
-DELETE FROM `pregnancyoutcome` WHERE uuid = 'PregOutcomeTest' ;
-DELETE FROM `pregnancyobservation` WHERE uuid = 'PregObsTest';
-DELETE FROM `relationship` WHERE uuid = 'TestRelationship';
-DELETE FROM  `membership` WHERE uuid = 'MemTest1';
-DELETE FROM `socialgroup` WHERE uuid = 'TestSocialGroup1';
-DELETE FROM `residency` WHERE uuid = 'TestResidency1';
-DELETE FROM `visit` WHERE uuid = 'TestVisit2';
-DELETE FROM `round` WHERE uuid = 'ROUND 2';
-DELETE FROM `individual` WHERE uuid = 'Test Indiv 1';
-DELETE FROM `individual` WHERE uuid = 'Test Indiv 2';
-DELETE FROM `individual` WHERE uuid = 'Test Indiv 3';
-DELETE FROM `location` WHERE uuid = 'TestLocation1';
-DELETE FROM `fieldworker` WHERE uuid = 'Test Fieldworker';
-DELETE FROM `user` WHERE uuid = 'User 2';
-
