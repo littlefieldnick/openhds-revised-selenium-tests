@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://130.111.126.71:8081/openhds/" />
+<title>User Details</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">User Details</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/openhds/login.faces</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_username</td>
+	<td>${user}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_password</td>
+	<td>${pass}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.texta &gt; div</td>
+	<td>Welcome ${user}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=CONFIGURATION</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=User Management</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>OpenHDS - Create UserOpenHDS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Create User</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>'testuser'</td>
+	<td>umUsername</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=j_id98:firstName</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=j_id98:surname</td>
+	<td>User</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=j_id98:description</td>
+	<td>Description</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=j_id98:user</td>
+	<td>${umUsername}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=j_id98:pass</td>
+	<td>deleteme</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=j_id98:confPass</td>
+	<td>deleteme</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@type='submit' and @value='Create']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>OpenHDS - Create UserOpenHDS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='text'][1]</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@type='submit' and @value='Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td.center</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form/div[4]/table/tbody/tr/td[2]</td>
+	<td>User</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='j_id58']/div[4]/table/tbody/tr[last()]/td[3]</td>
+	<td>${umUsername}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//img[@title='delete'])[last()]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>//form/div[4]/table/tbody/tr[last()]/td[3]</td>
+	<td>User</td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>//form/div[4]/table/tbody/tr[last()]/td[3]</td>
+	<td>newuser</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=j_id9:n</td>
+	<td>Logout</td>
+</tr>
+</tbody></table>
+</body>
+</html>

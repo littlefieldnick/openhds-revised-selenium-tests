@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="setup">Setup</a></td></tr>
+<tr><td><a href="welcome">Welcome</a></td></tr>
+<tr><td><a href="home">Home</a></td></tr>
+<tr><td><a href="getting-started">Getting Started</a></td></tr>
+<tr><td><a href="baseline">Baseline</a></td></tr>
+<tr><td><a href="update">Update</a></td></tr>
+<tr><td><a href="individual-details">Individual Details</a></td></tr>
+<tr><td><a href="individual-edit">Individual Edit</a></td></tr>
+<tr><td><a href="individual-delete">Individual Delete</a></td></tr>
+<tr><td><a href="death-empty">Death (empty)</a></td></tr>
+<tr><td><a href="location-details">Location Details</a></td></tr>
+<tr><td><a href="location-edit">Location Edit</a></td></tr>
+<tr><td><a href="location-delete">Location Delete</a></td></tr>
+<tr><td><a href="membership-details">Membership Details</a></td></tr>
+<tr><td><a href="membership-edit">Membership Edit</a></td></tr>
+<tr><td><a href="membership-delete">Membership Delete</a></td></tr>
+<tr><td><a href="in-migration-empty">In-Migration (empty)</a></td></tr>
+<tr><td><a href="out-migration-empty">Out-Migration (empty)</a></td></tr>
+<tr><td><a href="pregnancy-obs-details">Pregnancy Obs. Details (Empty)</a></td></tr>
+<tr><td><a href="pregnancy-obs-edit">Pregnancy Obs. Edit</a></td></tr>
+<tr><td><a href="pregnancy-obs-delete">Pregnancy Obs. Delete</a></td></tr>
+<tr><td><a href="pregnancy-outcome-empty">Pregnancy Outcome (empty)</a></td></tr>
+<tr><td><a href="pregnancy-outcome-create">Pregnancy Outcome Create</a></td></tr>
+<tr><td><a href="relationship-details">Relationship Details</a></td></tr>
+<tr><td><a href="relationship-edit">Relationship Edit</a></td></tr>
+<tr><td><a href="relationship-delete">Relationship Delete</a></td></tr>
+<tr><td><a href="residency-details">Residency Details</a></td></tr>
+<tr><td><a href="residency-delete">Residency Delete</a></td></tr>
+<tr><td><a href="socialgroup-details">SocialGroup Details</a></td></tr>
+<tr><td><a href="socialgroup-edit">SocialGroup Edit</a></td></tr>
+<tr><td><a href="socialgroup-delete">SocialGroup Delete</a></td></tr>
+<tr><td><a href="socialgroup-create">SocialGroup Create</a></td></tr>
+<tr><td><a href="visit-details">Visit Details</a></td></tr>
+<tr><td><a href="visit-edit">Visit Edit</a></td></tr>
+<tr><td><a href="visit-delete">Visit Delete</a></td></tr>
+<tr><td><a href="fieldworker-details">FieldWorker Details</a></td></tr>
+<tr><td><a href="fieldworker-edit">FieldWorker Edit</a></td></tr>
+<tr><td><a href="fieldworker-delete">FieldWorker Delete</a></td></tr>
+<tr><td><a href="fieldworker-create">FieldWorker Create</a></td></tr>
+<tr><td><a href="tasks">Tasks</a></td></tr>
+<tr><td><a href="user-management">User Management</a></td></tr>
+</tbody></table>
+</body>
+</html>

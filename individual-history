@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>individual-history</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">individual-history</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/openhds/login.faces</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_username</td>
+	<td>${user}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_password</td>
+	<td>${pass}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.texta &gt; div</td>
+	<td>Welcome ${user}, Logout</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=UTILITY ROUTINES</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Individual History</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>M1000S56E01P1-004</td>
+	<td>indivId</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>OpenHDS - History</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form:indivId</td>
+	<td>${indivId}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=form:selectBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>OpenHDS - History</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=form:resetBtn</td>
+	<td>Clear</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>OpenHDS - History</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
