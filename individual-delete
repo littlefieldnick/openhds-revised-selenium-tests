@@ -53,7 +53,12 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>xpath=(//img[@title='delete'])[10]</td>
+	<td>link=Last &gt;&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img[title=&quot;delete&quot;]</td>
 	<td></td>
 </tr>
 <tr>
