@@ -51,6 +51,16 @@
 	<td>MBI000023002</td>
 	<td>motherId</td>
 </tr>
+<tr>
+	<td>store</td>
+	<td>MBI000023001</td>
+	<td>fatherId</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>MBI000023003</td>
+	<td>indvId</td>
+</tr>
 </tbody></table>
 </body>
 </html>

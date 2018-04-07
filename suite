@@ -29,7 +29,7 @@
 <tr><td><a href="pregnancy-obs-details">Pregnancy Obs. Details (Empty)</a></td></tr>
 <tr><td><a href="pregnancy-obs-edit">Pregnancy Obs. Edit</a></td></tr>
 <tr><td><a href="pregnancy-obs-delete">Pregnancy Obs. Delete</a></td></tr>
-<tr><td><a href="pregnancy-outcome-empty">Pregnancy Outcome (empty)</a></td></tr>
+<tr><td><a href="pregnancy-outcome">Pregnancy Outcome</a></td></tr>
 <tr><td><a href="pregnancy-outcome-create">Pregnancy Outcome Create</a></td></tr>
 <tr><td><a href="relationship-details">Relationship Details</a></td></tr>
 <tr><td><a href="relationship-edit">Relationship Edit</a></td></tr>

@@ -19,10 +19,10 @@ VALUES ('Test Indiv 3', 'MBI000023003', 'Test', '' , 'Individual 3','F','1993-01
 INSERT INTO `round` (uuid,roundNumber,startDate,endDate,remarks) VALUES('ROUND 2' ,'2', '2018-04-04','2018-05-04', 'Test Round');
 
 INSERT INTO `visit` (uuid,extId,visitDate,status,insertDate,collectedBy_uuid,visitLocation_uuid,deleted,roundNumber,insertBy_uuid, realVisit) 
-VALUES ('TestVisit2','MBI000023001','2018-04-02','P','2018-04-04','Test Fieldworker','TestLocation1',false,2,'User 2', '0');
+VALUES ('TestVisit2','MBI000023002','2018-04-02','P','2018-04-04','Test Fieldworker','TestLocation1',false,2,'User 2', '0');
 
 INSERT INTO `residency` (uuid,location_uuid,individual_uuid,startDate,startType,endDate,endType,collectedBy_uuid,deleted,status,insertDate,insertBy_uuid)
-VALUES ('TestResidency1','TestLocation1','Test Indiv 3','1993-01-02','BIR',NULL,'NA','Test Fieldworker',false,'A','2014-04-04','User 2');
+VALUES ('TestResidency1','TestLocation1','Test Indiv 2','2018-04-04','BIR',NULL,'NA','Test Fieldworker',false,'A','2014-04-04','User 2');
 
 INSERT INTO `socialgroup` (uuid, extId, deleted, insertdate, groupName, collectedby_uuid, insertby_uuid, grouphead_uuid,groupType,status) 
 VALUES ('TestSocialGroup1','MBI000002300',false, '2018-04-04','Test SG','Test Fieldworker','User 2','Test Indiv 1','FAM','P');

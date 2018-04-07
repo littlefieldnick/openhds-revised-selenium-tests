@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://130.111.126.71:8081/openhds/" />
-<title>FieldWorker Edit</title>
+<title>Pregnancy Outcome Create</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">FieldWorker Edit</td></tr>
+<tr><td rowspan="1" colspan="3">Pregnancy Outcome Create</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -38,93 +38,113 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=UTILITY ROUTINES</td>
+	<td>link=AMENDMENTS</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Field Workers</td>
+	<td>link=Pregnancy Outcome</td>
 	<td></td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>id=pregnancyOutcomeForm:motherExtId</td>
+	<td>${motherId}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pregnancyOutcomeForm:fatherExtId</td>
+	<td>UNK</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pregnancyOutcomeForm:visit</td>
+	<td>${visitId}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pregnancyOutcomeForm:pregType</td>
+	<td>LBR</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pregnancyOutcomeForm:fieldWorker</td>
+	<td>${fwId}</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
-	<td>link=Listing</td>
+	<td>name=pregnancyOutcomeForm:j_id138</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyTitle</td>
-	<td>OpenHDS - Create Field WorkerOpenHDS</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeText</td>
-	<td>//form[@id='j_id72']/div[2]/table/tbody/tr/td[3]</td>
-	<td>fweLastName</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>xpath=(//img[@title='edit'])</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTitle</td>
-	<td>OpenHDS - Edit Field WorkerOpenHDS</td>
+	<td>OpenHDS - Create IndividualOpenHDS</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
 	<td>css=h1</td>
-	<td>Edit Field Worker</td>
-</tr>
-<tr>
-	<td>verifyValue</td>
-	<td>id=form:lastname</td>
-	<td>${fweLastName}</td>
+	<td>Create Individual</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=form:lastname</td>
-	<td>${fweLastName}!</td>
+	<td>id=individualForm:firstName</td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=individualForm:middleName</td>
+	<td>Person</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=individualForm:lastName</td>
+	<td>Human</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=individualForm:gender</td>
+	<td>M</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=individualForm:dobAspect</td>
+	<td>1</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//input[@type='submit' and @value='Save']</td>
+	<td>id=individualForm:createIndividual</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyTitle</td>
-	<td>OpenHDS - Field Worker DetailsOpenHDS</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//form/table/tbody/tr[3]/td[2]</td>
-	<td>${fweLastName}!</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//input[@type='submit' and @value='Edit']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTitle</td>
-	<td>OpenHDS - Edit Field WorkerOpenHDS</td>
+	<td>verifyElementNotPresent</td>
+	<td>//ul[@id='errors']/li[text()='may not be null']</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=form:lastname</td>
-	<td>${fweLastName}</td>
+	<td>id=form:socialGrp</td>
+	<td>${sgId}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form:relationshipType1</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form:membershipType1</td>
+	<td>BIR</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//input[@type='submit' and @value='Save']</td>
+	<td>id=form:create</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>//form/table/tbody/tr[3]/td[2]</td>
-	<td>${fweLastName}</td>
+	<td>clickAndWait</td>
+	<td>name=pregnancyOutcomeForm:j_id139</td>
+	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>

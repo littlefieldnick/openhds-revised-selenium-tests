@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://130.111.126.71:8081/openhds/" />
-<title>Individual Edit</title>
+<title>Pregnancy Obs. Delete</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Individual Edit</td></tr>
+<tr><td rowspan="1" colspan="3">Pregnancy Obs. Delete</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -19,16 +19,26 @@
 <tr>
 	<td>type</td>
 	<td>name=j_username</td>
-	<td>admin</td>
+	<td>${user}</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>name=j_password</td>
-	<td>test</td>
+	<td>${pass}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.texta &gt; div</td>
+	<td>Welcome ${user}</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/openhds/pregnancyobservation/create.faces</td>
 	<td></td>
 </tr>
 <tr>
@@ -38,47 +48,17 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Individual</td>
+	<td>link=Pregnancy Observation</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>xpath=(//img[@title='edit'])[10]</td>
+	<td>xpath=(//img[@title='delete'])</td>
 	<td></td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>css=h1</td>
-	<td>Edit Individual</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=individualForm:lastName</td>
-	<td>Unknown</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=individualForm:fieldWorker</td>
-	<td>${fwId}</td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
-	<td>name=individualForm:j_id157</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>css=h1</td>
-	<td>Individual Details</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>css=#j_id117 &gt; table &gt; tbody &gt; tr</td>
-	<td>Individual ID:</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=j_id8:n</td>
+	<td>id=j_id9:n</td>
 	<td></td>
 </tr>
 </tbody></table>

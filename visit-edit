@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://130.111.126.71:8081/openhds/" />
-<title>SocialGroup Edit</title>
+<title>Visit Edit</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">SocialGroup Edit</td></tr>
+<tr><td rowspan="1" colspan="3">Visit Edit</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -43,12 +43,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Social Group</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Listing</td>
+	<td>link=Visit</td>
 	<td></td>
 </tr>
 <tr>
@@ -57,49 +52,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>css=h1</td>
-	<td>Edit Social Group</td>
+	<td>verifyTitle</td>
+	<td>OpenHDS - Edit VisitOpenHDS</td>
+	<td></td>
 </tr>
 <tr>
 	<td>storeValue</td>
-	<td>id=form:name</td>
-	<td>sgeName</td>
+	<td>id=form:fwId</td>
+	<td>veFwId</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=form:name</td>
-	<td>Play Place!</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>name=form:j_id125</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=h1</td>
-	<td>Social Group Details</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//form/table/tbody/tr[2]/td[3]</td>
-	<td>Play Place!</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//input[@type='submit' and @value='Edit']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertText</td>
-	<td>css=h1</td>
-	<td>Edit Social Group</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=form:name</td>
-	<td>${sgeName}</td>
+	<td>id=form:fwId</td>
+	<td>${fwId}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -107,18 +72,53 @@
 	<td></td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>css=h1</td>
-	<td>Social Group Details</td>
+	<td>verifyTitle</td>
+	<td>OpenHDS - Visit DetailsOpenHDS</td>
+	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Visit Details</td>
+</tr>
+<tr>
+	<td>assertText</td>
 	<td>//form/table/tbody/tr[2]/td[3]</td>
-	<td>${sgeName}</td>
+	<td>${fwId}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>id=j_id8:n</td>
+	<td>//input[@type='submit' and @value='Edit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>OpenHDS - Edit VisitOpenHDS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=form:fwId</td>
+	<td>${veFwId}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@type='submit' and @value='Save']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>OpenHDS - Visit DetailsOpenHDS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/table/tbody/tr[2]/td[3]</td>
+	<td>${veFwId}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=j_id9:n</td>
 	<td></td>
 </tr>
 </tbody></table>

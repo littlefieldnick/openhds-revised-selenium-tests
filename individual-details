@@ -47,11 +47,6 @@
 	<td></td>
 </tr>
 <tr>
-	<td>verifyText</td>
-	<td>//form[@id='j_id112']/table/tbody/tr[11]/td[2]</td>
-	<td></td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
 	<td>id=j_id8:n</td>
 	<td></td>
